@@ -1,0 +1,138 @@
+@import url(http://weloveiconfonts.com/api/?family-fontawesome);
+
+
+html{
+    background-image: url(images/login_background.jpg);
+    background-size: cover;
+}
+
+body{
+	margin: 0px;
+}
+
+
+.card-columns {
+    /* Add shadows to create the "card" effect */
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	border-radius: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-columns:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.containercard {
+	padding: 2px 16px;
+}
+
+.container{
+	/*width: 500px;
+	height: 400px;*/
+
+	text-align: center;
+	background-color: rgba(52,73,94,0.8);
+	border-radius: 4px;
+	margin: 0px auto;
+	margin-top: 60px;
+}
+
+#dialog{
+	
+	text-align: center;
+	background-color: rgba(52,73,94,0.8);	
+	margin: 0px auto;
+	margin-top: 60px;
+}
+
+.container img{
+	width: 120px;
+	height: 120px;
+	margin-top: -60px;
+	margin-bottom: 75px;
+
+}
+
+#loginIMG{
+	width: 120px;
+	height: 120px;
+	margin-top: -60px;
+	margin-bottom: 10px;
+
+}
+
+
+#loginIMG1{
+	width: 120px;
+	height: 120px;
+	margin-top: -60px;
+	margin-bottom: 10px;
+
+}
+
+
+
+
+input[type="email"],input[type="password"]{
+	
+	width: 465px;
+	height: 45px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	background-color: #ffffff;
+	padding-left: 10px;
+}
+
+.modal-header, h4, .close {
+      background-color: rgba(52,73,94,0.8);
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+
+input[type="text"]{
+	
+	width: 465px;
+	height: 45px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	background-color: #ffffff;
+	padding-left: 10px;}
+
+.form-input:before {
+	content: "\f007";
+	position: absolute;
+	font-family: "fontawesome-user";
+	font-size: 30px;
+	padding-left: 5px;
+	padding-top: 7px;
+	color: #3F4C63;
+}
+
+.btn-login{
+
+	padding: 15px 30px;
+	color: #fff;
+	background-color: #2ECC71;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+a{
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	font-family: sans-serif;
+
+}
+
+a:hover{
+	color: coral;
+	font-weight: bold;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+{% load staticfiles %}
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+{% include 'signup/navbar.html' %}
+<link rel="stylesheet" type="text/css" href="{% static 'signup/style1.css' %}">
+
+{% block body_content %}
+    <h1 style="margin-top: 20px; margin-left: 40%">Add items to sell</h1>
+<div class="container"  >
+
+  <form action="{% url 'additem' %}" method="post" style="width: 950px; height: 400px">
+       {% csrf_token %}
+   <div class="form-group">
+        <label for="exampleInputName"><span>Username</span>
+            <input type="text" name="username" style="font-size: 13pt; height: 32px; width:300px; " class="form-control" id="exampleInputName" placeholder="Enter name" required>
+        </label>
+        <label for="exampleInputNumber"><span>Phone number</span>
+            <input type="number" name="phonenumber" style="font-size: 13pt; height: 32px; width:300px;" class="form-control" id="exampleInputNumber" placeholder="Enter contact"  required>
+        </label>
+
+        <label for="exampleInputEmail1"><span>Email address</span>
+            <input type="email" name="email" style="font-size: 13pt; height: 32px; width:300px;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+        </label>
+   </div>
+
+  <div class="form-group">
+      <label for="exampleTextarea"><span>About Item</span>
+    <textarea class="form-control" name="aboutitem" style="width: 500px" id="exampleTextarea" rows="2" maxlength="200" required></textarea>
+        </label>
+
+      <label for="exampleInputPrice"><span>Price</span>
+          <input type="number" name="price" style="width:200px;" class="form-control" id="exampleInputPrice" placeholder="Enter price"  required>
+      </label>
+
+      <label for="tags"><span>Tags</span>
+
+          <select id="tags" name="tag">
+            <option name="books" value="Books">Books</option>
+            <option name="cycle" value="Cycle">Cycle</option>
+            <option name="cooler" value="Cooler">Cooler</option>
+          </select>
+      </label>
+
+      <label for="exampleInputFile"><span style="margin-left: 220px">Item image</span>
+        <input type="file" name="image" style="margin-left: 200px" class="form-control-file" id="exampleInputFile" accept="image/*" aria-describedby="fileHelp" required>
+      </label>
+  </div>
+
+      <center><button type="submit" class="btn btn-primary" >Submit</button></center>
+</form>
+</div>
+{% endblock %}
+</html>
